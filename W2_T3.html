@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3: IIE Tech Club Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #333;
+    }
+
+    form {
+      background: #ffffff;
+      padding: 35px 40px;
+      border-radius: 15px;
+      width: 420px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transform: translateY(-20px);
+      animation: slideIn 1s forwards;
+    }
+
+    @keyframes slideIn {
+      to { transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+      color: #0077b6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 img {
+      width: 40px;
+      height: 40px;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-size: 14px;
+    }
+
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background: #f7f9fb;
+      color: #333;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    input[type="text"]:focus, select:focus {
+      border-color: #0077b6;
+      box-shadow: 0 0 5px #0077b650;
+      outline: none;
+    }
+
+    input[type="submit"], input[type="button"] {
+      width: 48%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    input[type="submit"] {
+      background: #0077b6;
+      color: #fff;
+    }
+
+    input[type="submit"]:hover {
+      background: #005f8a;
+      transform: translateY(-2px);
+    }
+
+    input[type="button"] {
+      background: #aaa;
+      color: #fff;
+      float: right;
+    }
+
+    input[type="button"]:hover {
+      background: #888;
+      transform: translateY(-2px);
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>
+      Join IIE Tech Club
+      <img src="https://cdn-icons-png.flaticon.com/512/4105/4105459.png" alt="Tech Sticker">
+    </h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="year">Year</label>
+    <input type="text" id="year" name="year" placeholder="Enter your year">
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="" disabled selected>Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="semester">Semester</label>
+    <select id="semester" name="semester">
+      <option value="" disabled selected>Select Semester</option>
+      <option value="SEM1">SEM1</option>
+      <option value="SEM2">SEM2</option>
+      <option value="SEM3">SEM3</option>
+      <option value="SEM4">SEM4</option>
+      <option value="SEM5">SEM5</option>
+      <option value="SEM6">SEM6</option>
+      <option value="SEM7">SEM7</option>
+      <option value="SEM8">SEM8</option>
+    </select>
+
+    <div class="clearfix">
+      <input type="submit" value="Submit">
+      <input type="button" value="Reset" onclick="this.form.reset()">
+    </div>
+  </form>
+
+</body>
+</html>
