@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tasks — India, Equations & About Me</title>
+  <style>
+    /* Minimal documentation: light styling for readability */
+    :root { --maxw: 900px; --accent: #0b5; --muted: #666; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.5; color: #111; padding: 2rem; background:#f7fafc; }
+    .container { max-width: var(--maxw); margin: 0 auto; background: #fff; padding: 1.6rem; border-radius: 10px; box-shadow: 0 6px 18px rgba(20,20,20,0.06); }
+    h1,h2 { color: #0a2540; margin: .2rem 0 .6rem; }
+    p { margin: .4rem 0 1rem; }
+    .eq-group { display:flex; gap:1.2rem; flex-wrap:wrap; }
+    .eq { background:#f1f7f9; padding:.6rem .8rem; border-radius:6px; border:1px solid #e2eef2; font-family: "Courier New", monospace; }
+    .meta { color: var(--muted); font-size:.95rem; margin-bottom: .8rem; }
+    .about-row { display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
+    .badge { background: #e8f7ee; color: #066; padding:.2rem .5rem; border-radius:6px; font-weight:600; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <!-- Section 1: Article on India (short note, uses headings, paragraphs, br) -->
+    <article>
+      <h1><a href="https://en.wikipedia.org/wiki/India" target="_blank">INDIA</a></h1>
+      <p>
+        India is a large, multicultural country in South Asia and one of the world's most populous nations.<br>
+        It has a population exceeding one billion people and is the world's largest democracy.<br>
+        The country displays huge geographic variety, from the Himalayan mountains to coastal plains and tropical forests.<br>
+        India is also a major global economy and a megadiverse region with many endemic species.
+      </p>
+      <p>
+        (Short paraphrase from Wikipedia; see citations after the code block.)<br>
+      </p>
+    </article>
+
+    <hr>
+
+    <!-- Section 2: Equations using <sub> and <sup> -->
+    <section>
+      <h2>Equations (use of &lt;sub&gt; and &lt;sup&gt;)</h2>
+      <p class="meta">Five quadratic equations followed by five linear equations. Subscripts show variable indices; superscripts show powers.</p>
+
+      <div>
+        <h3>Quadratic equations</h3>
+        <div class="eq-group" aria-label="Quadratic equations">
+          <div class="eq">1) 3x<sup>2</sup> + 5x + 2 = 0</div>
+          <div class="eq">2) -4x<sup>2</sup> + 2x - 4 = 5</div>
+          <div class="eq">3) 2x<sub>1</sub><sup>2</sup> + x<sub>1</sub> - 6 = 0</div>
+          <div class="eq">4) x<sup>2</sup> - 7x + 12 = 0</div>
+          <div class="eq">5) 5x<sup>2</sup> + 0x + 1 = 0</div>
+        </div>
+      </div>
+
+      <div style="margin-top:0.8rem;">
+        <h3>Linear equations</h3>
+        <div class="eq-group" aria-label="Linear equations">
+          <div class="eq">1) 2x + y = 0</div>
+          <div class="eq">2) 2x<sub>1</sub> + 3x<sub>2</sub> + 5x<sub>3</sub> = 9</div>
+          <div class="eq">3) -x + 4y = 8</div>
+          <div class="eq">4) 7x - 2 = 0</div>
+          <div class="eq">5) 0.5x + 2.5 = 3</div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Section 3: About Me (uses heading, p, br, anchor, div & span) -->
+    <section>
+      <h2>About Me</h2>
+      <div class="about-row">
+        <div style="flex:1 1 60%;">
+          <p>
+            Hii, I am <a href="www.linkedin.com/in/manidwiptam" target="_blank"><strong>Manidwiptam Halder</strong></a>.<br>
+            I am from <span class="badge">Kalyani, Natunpally Ward No. - 04</span>.<br>
+            I completed my Madhyamik Examination from Kalyani University Experimental High School in 2020 with <span class="badge">68.9%</span>.<br>
+            Then I completed my Diploma in Electrical Engineering from Ranaghat Government Polytechnic in 2023 with <span class="badge">87.5%</span>.<br>
+            Currently I am pursuing Computer Science &amp; Engineering from IIE.<br>
+            My hobbies are playing cricket, watching movies, web series &amp; anime.<br>
+            That is all about me.
+          </p>
+        </div>
+
+        <!-- small profile box using div & span -->
+        <aside style="flex:0 1 28%; background:#fbfbff; border:1px solid #eef; padding:.6rem; border-radius:8px;">
+          <div style="font-weight:700; margin-bottom:.4rem;">Quick Facts</div>
+          <div><span style="font-weight:600;">Location:</span> Natunpally Ward 04</div>
+          <div><span style="font-weight:600;">Education:</span> Diploma (EE), BTech (CSE)</div>
+          <div><span style="font-weight:600;">Hobbies:</span> Cricket, Movies, Anime</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
